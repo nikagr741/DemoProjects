@@ -69,6 +69,7 @@ To let GitHub send data to your local machine:
 2. Run ngrok: `ngrok http 5000`
 3. Copy the **Forwarding URL** (e.g., `https://your-id.ngrok-free.app`).
 
+![img.png](img.png)
 ---
 
 ## 🧪 Step 3: Configure GitHub Webhook
@@ -76,7 +77,7 @@ To let GitHub send data to your local machine:
 2. **Payload URL:** Paste your ngrok URL + `/webhook`.
 3. **Content type:** Select `application/json`.
 4. Click **Add webhook**.
-
+![img_1.png](img_1.png)
 ## ✅ Testing the Integration
 Push a change to your repo:
 ```bash
