@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package task;
+
+// The Task service definition.
+service TaskService {
+  // Sends a processing request
+  rpc ProcessData (Request) returns (Response) {}
+}
+
+// The request message containing the user's name or data to process.
+message Request {
+  string name = 1;
+}
+
+// The response message containing the generated Job ID.
+message Response {
+  string message = 1;
+  string job_id = 2;
+}
